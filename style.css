@@ -1,0 +1,167 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+/* =============================================== */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Light-Gray);
+}
+
+h2 {
+    color: var(--Cyan);
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--Bright-Yellow);
+    margin-bottom: 12px;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+span {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+button {
+    background-color: var(--Bright-Yellow);
+    border: none;
+    width: 235px;
+    height: 50px;
+    border-radius: 7px;
+    box-shadow: 6px 8px 20px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.container {
+    width: 635px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 6px 8px 20px 1px rgba(0, 0, 0, 0.2);
+    margin: 5%;
+}
+
+.top-half {
+    background-color: #fff;
+    height: 215px;
+    padding: 40px;
+}
+
+.bottom-half {
+    height: 260px;
+    display: flex;
+    color: #fff;
+}
+
+.monthly-sub {
+    background-color: var(--Cyan);
+    width: calc(635px/2);
+    padding: 40px;
+}
+
+.why-us {
+    background-color: var(--Cyan);
+    opacity: .8;
+    width: calc(635px/2);
+    padding: 40px;
+}
+
+.top-half p {
+    color: var(--Grayish-Blue);
+}
+
+.monthly-sub p {
+    margin-bottom: 30px;
+}
+
+.why-us p {
+    font-size: .85rem;
+    padding-right: 70px;
+    font-weight: 200;
+}
+
+/* =============================================== */
+
+@media (max-width:705px) {
+    button {
+        width: 265px;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .container {
+        width: 310px;
+        height: auto;
+    }
+    .top-half {
+        height: 267px;
+        padding: 30px;
+    }
+    .bottom-half {
+        width: 310px;
+        height: auto;
+        flex-direction: column;
+    }
+    .monthly-sub, .why-us {
+        height: 230px;
+        padding: 25px;
+    }
+    .why-us {
+        padding-right: 55px;
+    }
+    .top-half p {
+        font-size: .84rem;
+        line-height: 1.8;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:325px) {
+    .container {
+        margin: 0;
+    }
+    .top-half {
+        height: auto;
+    }
+}
